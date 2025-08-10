@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: "Avenir"; 
+    src: url("fonts/Avenir-Heavy.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 900; 
+}
+
+/*  font-family: "Noto Sans", sans-serif;
+    font-family: "Montserrat", sans-serif; 
+    font-family: "Avenir", sans-serif;*/
+
+body {
+    margin: 0;
+    background-color: #000000;
+    font-family: "Noto Sans", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", sans-serif; 
+    margin: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 51px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+p {
+    margin: 0;
+}
+
+a:hover{
+    opacity: 0.8;
+}
+
+a:active {
+    opacity: 1;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-small {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Шапка */
+
+.header {
+    /* position: relative;
+    z-index: 1; */
+}
+.header .container {
+    display: flex;
+    align-items: center;
+    gap: 110px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__logo-cube {
+
+}
+
+.header__logo-text {
+
+}
+
+.header__login {
+    gap: 12px;   
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+.header__login-text {
+
+}
+
+/*welcome*/
+
+.main {
+    margin-top: 0px;
+}
+
+.welcome {
+
+}
+
+
+.welcome .container {
+    position: relative;
+    
+}
+
+.welcome .container::after {
+    content: "";
+
+    width: 910px;
+    height: 1106px;
+
+    position: absolute;
+    right: -260px;
+    top: -390px;
+    z-index: -1;
+
+    transform: rotate(-105deg);
+
+    background-image: url(img/bg-welcome.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.welcome__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 700px;
+    
+    margin-bottom: 50px;
+
+
+}
+
+.welcome__desc {
+    
+}
+
+.welcome__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.09;
+
+    margin-bottom: 130px;
+
+}
+
+.welcome__text {
+    position: relative;
+
+    font-size: 20px;
+
+    padding-left: 110px;
+    width: 380px;
+}
+
+.welcome__text::before {
+    content: "";
+    
+    position: absolute;
+
+    left: 10px;
+    bottom: 50%;
+
+    width: 125px;
+    height: 125px;
+    
+    background: rgba(96, 92, 234, 0.51);
+    filter: blur(50px);
+}
+
+.welcome__text::after {
+    content: "";
+
+    position: absolute;
+    left: -20px;
+    bottom: 55px;
+
+    width: 140px;
+    height: 4px;
+    background-color: #ffffff;
+
+    transform: rotate(120deg);
+
+}
+
+.welcome__img {
+    width: 600px;
+    
+    position: absolute;
+    right: -30px;
+    top: -140px;
+}
+
+.welcome__cta {
+    padding-right: 60px;
+
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.cta__text {
+    font-family: "Montserrat", sans-serif; 
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.cta__links {
+    display: flex;
+    gap: 30px;
+    z-index: +1;
+}
+
+.cta__link {
+
+}
+
+.cta__img {
+
+}
+
+
+/*mission*/
+.mission {
+    padding: 150px 85px;
+    position: relative;
+}
+
+.mission .container {
+    
+}
+
+.container .mission__img {
+    position: absolute;
+
+    transform: rotate(90deg) translate(-43%);
+    top: 0;
+    right: 50%;
+    z-index: -1;
+
+}
+
+.mission__desc {
+    width: 322px;
+    margin-left: auto;
+    padding-right: 80px;
+
+}
+
+.mission__title {
+    margin-bottom: 30px;   
+    position: relative;
+}
+
+.mission__title::after {
+    content: "";
+    position: absolute;
+
+    right: 55px;
+    top: 7px;
+
+    width: 85px;
+    height: 85px;
+
+    opacity: 0.7;
+    background: #f101bf;
+    filter: blur(50px);
+    z-index: -1;
+      
+}
+
+.mission__text {
+    
+}
+
+/* common */
+.common {
+    background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 56%, #000 84%), url("img/bg-scanner.jpg");
+    background-size: cover;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+
+.common .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+.common__img {
+
+}
+
+.common__decs {
+    width: 410px;
+}
+
+.common__title {
+    margin-bottom: 20px;
+}
+
+.common__text {
+    
+}
